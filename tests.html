@@ -1,0 +1,31 @@
+<body>
+    <form action="/action">
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi" selected>Audi</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+
+    <form action="/action">
+        <input type="file" id="files" name="files" multiple>
+
+        
+        <br>
+        <input tpye="text" placeholder="ex) 123-21-123">
+        <br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" pattern="가-힣{2}">
+        <br>
+        <label for="pin">PIN:</label><br>
+        <input type="text" id="pin" name="pin" maxlength="4">
+        <br><br>
+        <button type="button" onclick="document.write('Hello!!')">등록</button>
+        <button type="button" onclick="open('http://naver.com','','width=200 height=200')">등록</button>
+    </form>
+</body>

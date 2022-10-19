@@ -1,0 +1,46 @@
+<style>
+    body {
+        user-select: none;
+    }
+    /* 기능 무료화-드래그, 우클릭*/
+
+    input {
+        display: none;
+    }
+        /* input 클릭모양 숨겨라 */
+    div {
+        display: none;
+        /* 하나 제외하고 숨겨라 */
+        background-color: lightpink;
+        width: 90vw;
+        height: 30vh;
+    }
+
+    input:checked+label {
+        background-color: purple;
+    }
+
+    input:nth-of-type(1):checked~div:nth-of-type(1) {
+        display: block;
+    }
+
+    input:nth-of-type(2):checked~div:nth-of-type(2) {
+        display: block;
+    }
+
+    input:nth-of-type(3):checked~div:nth-of-type(3) {
+        display: block;
+    }
+</style>
+
+<body>
+    <input type="radio" id='a' name='menu'>
+    <label for="a">A 메뉴</label>
+    <input type="radio" id='b' name='menu'>
+    <label for="b">B 메뉴</label>
+    <input type="radio" id='c' name='menu'>
+    <label for="c">C 메뉴</label>
+    <div>A 내용</div>
+    <div>B 내용</div>
+    <div>C 내용</div>
+</body>
